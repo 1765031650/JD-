@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bw.arp.jd.ShoppingCar.MyDingdan.DingdanActivity">
+    <TextView
+        android:id="@+id/order_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="订单价格"
+        android:textSize="20sp"
+        android:textColor="#f00"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/dingdan_tuichu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:text="退出" />
+
+    <Button
+        android:id="@+id/dingdan_creat"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:text="创建订单" />
+
+</RelativeLayout>

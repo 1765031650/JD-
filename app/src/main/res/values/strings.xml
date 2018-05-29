@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">仿京东商城</string>
+    <string name="homepage_JDmiaosha">京东秒杀</string>
+    <string name="homepage_time">10点场</string>
+    <string name="homepage_JDkuaibao">京东快报</string>
+    <string name="homepage_JDkuaibao_more">更多</string>
+</resources>

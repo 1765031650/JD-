@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.bw.arp.jd"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    greendao {
+        schemaVersion 1  //版本
+        daoPackage 'com.bw.arp.jd.greendemo' // 一般为app包名+生成文件的文件夹名
+        targetGenDir 'src/main/java' //生成文件路径
+    }
+
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    testCompile 'junit:junit:4.12'
+    //ButterKnife-依赖：
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //fresco依赖:
+    compile 'com.facebook.fresco:fresco:+'
+    //fresco加载gif依赖:
+    compile 'com.facebook.fresco:animated-gif:+'
+    //Retrofit+Rxjava依赖：
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    //recyclerview
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    //底部第三方
+    compile 'com.hjm:BottomTabBar:1.1.1'
+    //Banner图
+    compile 'com.youth.banner:banner:1.4.10'
+    //Imageloader
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //TabLayout
+    compile 'com.android.support:design:23.3.0'
+    //floatingactionbutton
+    compile 'com.getbase:floatingactionbutton:1.9.0'
+    //二维码
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    //刷新控件springview
+    compile 'com.liaoinstan.springview:library:1.2.6'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'org.greenrobot:greendao:3.1.0'
+}

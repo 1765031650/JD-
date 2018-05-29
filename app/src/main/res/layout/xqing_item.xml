@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/XQ_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商品详情"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/XQ_banner"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:id="@+id/XQ_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/XQ_price"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/XQ_youhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#f00"/>
+</LinearLayout>

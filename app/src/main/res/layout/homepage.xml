@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+        <com.bw.arp.jd.Activity.SearchActivity
+            android:id="@+id/myheader"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/image"
+        android:layout_below="@id/banner"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_01"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@id/img"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlv_01"
+            android:id="@+id/RelativeLayout_kuaibao"
+            >
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/sou_bao"-->
+                <!--/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_JDkuaibao"
+                android:textColor="@color/homepage_JDmiaosha"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+            <com.bw.arp.jd.Utils.NoticeView
+                android:id="@+id/NoticeView"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:background="#ffffff"
+                >
+            </com.bw.arp.jd.Utils.NoticeView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_JDkuaibao_more"
+                android:layout_marginRight="20dp"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_below="@id/RelativeLayout_kuaibao"
+            android:id="@+id/miaosha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_miaosha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_JDmiaosha"
+                android:textColor="@color/homepage_JDmiaosha"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_miaosha_time"
+                android:text="@string/homepage_time"
+                android:textSize="16sp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_miaosha_shi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_miaosha_minter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_miaosha_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_02"
+            android:layout_below="@id/miaosha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </RelativeLayout>
+</ScrollView>
